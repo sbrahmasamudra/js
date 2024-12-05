@@ -4,16 +4,18 @@
   
   <div id = "main"></div>
   
-    <script type=application/javascript>
+    <script type="application/javascript">
     
-        fetch (https://api.coincap.io/v2/assets)
+        fetch ("https://api.coincap.io/v2/assets")
         .then (response=> response.json())
         .then(data=> console.log(data));
     
+        document.getElementById("main").innerHTML= data;
+
     </script>
   
-  document.getElementById("main").innerHTML= data;
-  
   </body>
+
+</html>
   
   
